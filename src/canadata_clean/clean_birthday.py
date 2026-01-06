@@ -4,7 +4,7 @@ def clean_birthday(text: str) -> str:
 
     The function accepts birthday strings in the following formats:
     - YYYY-MM-DD (primary target format)
-    - DD/MM/YYYY (common in many countries, including parts of Europe)
+    - DD/MM/YYYY (common in many countries, or areas that are highly influence by the British)
     - DD-MM-YYYY
 
     It performs the following steps:

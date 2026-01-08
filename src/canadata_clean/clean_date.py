@@ -1,8 +1,8 @@
-def clean_birthday(text: str) -> str:
+def clean_date(text: str) -> str:
     """
-    Clean and validate a birthday string, converting common formats to the Canadian standard YYYY-MM-DD (ISO 8601).
+    Clean and validate a date string, converting common formats to the Canadian standard YYYY-MM-DD (ISO 8601).
 
-    The function accepts birthday strings in the following formats:
+    The function accepts date strings in the following formats:
     - YYYY-MM-DD (primary target format)
     - DD/MM/YYYY (common in many countries, or areas that are highly influence by the British)
     - DD-MM-YYYY
@@ -18,12 +18,12 @@ def clean_birthday(text: str) -> str:
     Parameters
     ----------
     text : str
-        The input string representing a birthday in one of the supported formats.
+        The input string representing a date in one of the supported formats.
 
     Returns
     -------
     str
-        The validated birthday in strict YYYY-MM-DD format.
+        The validated date in strict YYYY-MM-DD format.
 
     Raises
     ------
@@ -34,16 +34,16 @@ def clean_birthday(text: str) -> str:
 
     Examples
     --------
-    >>> clean_birthday("1990-05-15")
+    >>> clean_date("1990-05-15")
     '1990-05-15'
-    >>> clean_birthday("15/05/1990")
+    >>> clean_date("15/05/1990")
     '1990-05-15'
-    >>> clean_birthday("15-05-1990")
+    >>> clean_date("15-05-1990")
     '1990-05-15'
-    >>> clean_birthday("  15 / 05 / 1990  ")
+    >>> clean_date("  15 / 05 / 1990  ")
     '1990-05-15'
-    >>> clean_birthday("2030-01-01")  # Future date
-    # Raises ValueError: Birthday cannot be in the future
-    >>> clean_birthday("February 30")
+    >>> clean_date("2030-01-01")  # Future date
+    # Raises ValueError: Date cannot be in the future
+    >>> clean_date("February 30")
     # Raises ValueError: Unable to parse date
     """

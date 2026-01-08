@@ -9,7 +9,7 @@ canadata-clean provides a collection of utility functions for cleaning and valid
 
 ## Summary
 
-This package helps ensure data consistency for Canadian information by formatting and validating phone numbers, postal codes, and city or province names, and by checking birthdays or dates of birth against Canadian date formats, highlighting any invalid entries.
+This package helps ensure data consistency for Canadian information by formatting and validating phone numbers, postal codes, and city or province names, and by checking dates or dates of birth against Canadian date formats, highlighting any invalid entries.
 
 When a value does not meet the required Canadian format, canadata-clean raises a warning-type error to flag the invalid entry while allowing data processing to continue. This makes it easy to identify and address data quality issues without interrupting workflows, while still producing clean, analysis-ready datasets.
 
@@ -29,12 +29,12 @@ import canadata-clean
 
 ### Functions
 ```python
-clean_birthday(date)
+clean_date(date)
 ```
 This function cleans and validates a date string, converting common formats to the Canadian standard YYYY-MM-DD (ISO 8601).
 
 ```python
-clean_postcode(postal_code)
+clean_postalcode(postal_code, region)
 ```
 This function cleans and validates a Canadian postal code string field to ensure that it matches the Canadian postal code format (e.g., "A1A 1A1").
 

@@ -17,3 +17,9 @@ def test_single_digit_day_month():
     out = clean_date("5/8/1990")
     expected_out = "1990-08-05"
     assert out == expected_out, f"Expected {expected_out} but got {out}"
+
+def test_leap_year_valid():
+    """Test that valid leap year date (Feb 29) is accepted."""
+    out = clean_date("29/02/2020")
+    expected_out = "2020-02-29"
+    assert out == expected_out, f"Expected {expected_out} but got {out}"

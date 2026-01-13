@@ -38,6 +38,10 @@ def clean_location(text: str) -> str:
     """
     if not isinstance(text, str):
         raise TypeError(f"Expected input to be str, got {type(text)}")
+    
+    if not text.strip():
+        raise ValueError("Text cannot be empty.")
+
     return str()
 
 def standardize():
@@ -85,5 +89,7 @@ def identify_province_territory():
         "SK": ["Saskatchewan", "Sask."],
         "YT": ["Yukon", "Yuk.", "Yn", "YK"]
     }
+
+    # add check here: if province/territory identified but no characters remaining, then throw valueerror for missing municipality
 
     return

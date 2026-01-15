@@ -22,8 +22,26 @@
 # SOFTWARE.
 
 """
-Add a docstring here for the init module.
+canadata_clean
 
-This might include a very brief description of the package,
-its purpose, and any important notes.
+A collection of utility functions for cleaning and validating Canada-specific structured data
+in pandas DataFrames. This package helps standardize common Canadian data fields, including
+phone numbers, postal codes, location names (cities and provinces), and dates, while identifying
+invalid or problematic entries.
+
+Functions in this package ensure data consistency by:
+- Formatting and validating phone numbers and postal codes according to Canadian standards.
+- Normalizing city and province names for consistent analysis.
+- Checking dates or dates of birth against Canadian date formats.
+- Highlighting invalid entries with warnings or exceptions, allowing workflows to continue
+  without interruption.
+
+This package is intended to make datasets analysis-ready while helping users identify and
+correct data quality issues in Canadian datasets.
 """
+
+from canadata_clean.clean_phonenumber import clean_phonenumber
+from canadata_clean.clean_postalcode import clean_postalcode
+from canadata_clean.clean_location  import clean_location
+from canadata_clean.clean_date import clean_date
+__all__ = ["clean_phonenumber", "clean_postalcode", "clean_location", "clean_date"]

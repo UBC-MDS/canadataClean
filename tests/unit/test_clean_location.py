@@ -9,30 +9,30 @@ from canadata_clean.clean_location import remove_spaces
 
 
 
-# def test_clean_location():
-#     """
-#     Test that clean_location works as expected.
-#     """
+def test_clean_location():
+    """
+    Run the following tests to ensure that the clean_location function works as expected.
+    """
 
-#     test_empty()
-#     test_output_type()
-#     test_incomplete_input()
-#     test_capitalization()
-#     test_spaces_sides()
-#     test_spaces_middle()
-#     test_format()
-#     test_unidentified_province_territory()
-#     test_province_territory_replacement()
-#     test_same_distance_raises_error()
+    empty()
+    output_type()
+    incomplete_input()
+    capitalization()
+    spaces_sides()
+    spaces_middle()
+    format()
+    unidentified_province_territory()
+    province_territory_replacement()
+    same_distance_raises_error()
 
-def test_empty():
+def empty():
     """
     Test that the function never returns an empty string.
     """
 
     assert clean_location("BC"), "Output should not be empty."
  
-def test_capitalization():
+def capitalization():
     """
     Test that the output is always capitalized.
     """
@@ -41,7 +41,7 @@ def test_capitalization():
     expected_out = "BC"
     assert out == expected_out, f"Expected {expected_out} but got {out}"
 
-def test_spaces_sides():
+def spaces_sides():
     """
     Test that the output string starts and ends in a non-space character.
     """
@@ -50,7 +50,7 @@ def test_spaces_sides():
     assert not out.startswith(" "), "Output should not begin with a space."
     assert not out.endswith(" "), "Output should not end with a space."
 
-def test_spaces_middle():
+def spaces_middle():
     """
     Test that the output string does not have more than one space between characters.
     """
@@ -59,7 +59,7 @@ def test_spaces_middle():
     assert not re.search(r" {2,}", clean_location("Newfoundlandandlabrador"))
     assert not re.search(r" {2,}", clean_location("Newfoundland and Labrador"))
 
-def test_format():
+def format():
     """
     Test that the output is of the format '<two-letter code>'.
     """
@@ -69,7 +69,7 @@ def test_format():
     assert re.match(r"^[A-Z]{2}$", clean_location("Saskatchewan"))
     assert re.match(r"^[A-Z]{2}$", clean_location("Yukon"))
 
-def test_output_type():
+def output_type():
     """
     Test that the output is of type string.
     """
@@ -79,7 +79,7 @@ def test_output_type():
     # output should be string if nothing was modified
     assert isinstance(clean_location("City, BC"), str)
 
-def test_wrong_input_type():
+def wrong_input_type():
     """
     Test that a non-string input type throws a TypeError.
     """
@@ -96,7 +96,7 @@ def test_wrong_input_type():
     with pytest.raises(TypeError):
         clean_location(["First Location", "Second Location"])
 
-def test_incomplete_input():
+def incomplete_input():
     """
     Test that empty strings throw a ValueError.
     """
@@ -107,7 +107,7 @@ def test_incomplete_input():
     with pytest.raises(ValueError):
         clean_location(" ")
 
-def test_province_territory_replacement():
+def province_territory_replacement():
     """
     Test that the function correctly matches various province/territory names and abbreviations to the official two-letter code, including small and medium typos.
     """
@@ -134,7 +134,7 @@ def test_province_territory_replacement():
         out = clean_location(key)
         assert out == value, f"Expected {value} but got {out}"
 
-def test_same_distance_raises_error():
+def same_distance_raises_error():
     """
     Test that the function raises a ValueError if the input has equal
     partial matches to two or more province/territories.
@@ -142,7 +142,7 @@ def test_same_distance_raises_error():
     with pytest.raises(ValueError):
         clean_location("VB")
 
-def test_unidentified_province_territory():
+def unidentified_province_territory():
     """
     Test that the function throws a ValuError if it cannot identify a province/territory, including significant typos.
     """
@@ -162,13 +162,19 @@ def test_unidentified_province_territory():
     with pytest.raises(ValueError):
         clean_location("b colum")
 
-def test_remove_helpers():
+# Added additional tests for remove_punctuation and remove_spaces helper functions as suggested by ChatGPT. I wrote the tests myself: ChatGPT only provided the suggestion that I test these functions independently.
+def test_remove_punctuation():
     """
-    Test that the helper functions remove_punctuation and remove_spaces work as
-    expected.
+    Test that the helper function remove_punctuation works as expected.
     """
     assert remove_punctuation("P.E.I.") == "PEI"
     assert remove_punctuation("N.-W.-T.") == "NWT"
     assert remove_punctuation("Prince-Edward-Island") == "PrinceEdwardIsland"
     assert remove_punctuation("Newfoundland & Labrador") == "Newfoundland  Labrador"
+
+def test_remove_spaces():
+    """
+    Test that the helper function remove_spaces works as expected.
+    """
     assert remove_spaces("newfoundland and labrador") == "newfoundlandandlabrador"
+    assert remove_spaces("newfoundland and      labrador") == "newfoundlandandlabrador"

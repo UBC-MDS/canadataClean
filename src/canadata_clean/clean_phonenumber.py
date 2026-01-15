@@ -49,6 +49,6 @@ def clean_phonenumber(text: str) -> str:
     area = cleaned[0:3]
     extension = cleaned[3:6]
     line = cleaned[6:]
-    output = f"+1 ({area}) {exchange}-{line}"
+    output = f"+1 ({area}) {extension}-{line}"
     
     return output

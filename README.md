@@ -48,6 +48,19 @@ clean_phonenumber(phone_number)
 ```
 This function cleans and validates a phone number string field to ensure that it matches the Canadian phone number format ("+1 (XXX) XXX-XXXX").
 
+## To run the tests
+
+You can run the tests for this package using `pytest`. First, install the testing dependencies:
+
+```bash
+$ pip install -e.[test]
+```
+
+Then, run the tests with:
+```
+$ pytest
+```
+
 ## Where This Fits in the Python Ecosystem
 
 canadata-clean fits into the broader Python data processing and data quality ecosystem, alongside libraries such as [pandas](https://pandas.pydata.org/) and data validation tools like [pydantic](https://docs.pydantic.dev/latest/) . While pandas provides flexible, general-purpose tools for data manipulation, and pydantic offers highly configurable rule-based systems, canadata-clean focuses on a lightweight and targeted approach to data cleaning.

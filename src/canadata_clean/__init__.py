@@ -22,6 +22,8 @@
 # SOFTWARE.
 
 """
+canadata_clean
+
 A collection of utility functions for cleaning and validating Canada-specific structured data
 in pandas DataFrames. This package helps standardize common Canadian data fields, including
 phone numbers, postal codes, location names (cities and provinces), and dates, while identifying

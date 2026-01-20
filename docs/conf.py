@@ -1,5 +1,5 @@
 #
-# canadata-clean documentation build configuration file
+# canadataClean documentation build configuration file
 #
 import os
 import sys
@@ -14,7 +14,7 @@ current_year = datetime.now().year
 
 # -- General project information -----------------------------
 # General information about the project.
-project = "canadata-clean"
+project = "canadataClean"
 copyright = "Copyright © 2026 Molly Kessler"
 html_show_sphinx = False
 
@@ -22,7 +22,7 @@ html_show_sphinx = False
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 try:
-    version = importlib.metadata.version("canadata_clean")
+    version = importlib.metadata.version("canadataClean")
 except importlib.metadata.PackageNotFoundError:
     version = "0.0.0"
 
@@ -133,7 +133,7 @@ html_theme = "pydata_sphinx_theme"
 # html_file_suffix = ''
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "canadata-clean_doc"
+htmlhelp_basename = "canadataClean_doc"
 
 
 intersphinx_mapping = {

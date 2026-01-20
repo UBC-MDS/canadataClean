@@ -1,5 +1,5 @@
 import pytest
-from canadata_clean.clean_date import clean_date
+from canadataClean.clean_date import clean_date
 
 def test_valid_date_formats():
     """Test various valid date formats and conversions, covering 4 edge cases: YYYY-MM-DD, DD/MM/YYYY, DD-MM-YYYY, and single-digit handling."""

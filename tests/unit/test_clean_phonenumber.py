@@ -1,6 +1,6 @@
 import pytest
  
-from canadata_clean import clean_phonenumber
+from canadataClean import clean_phonenumber
 
 def test_clean_phonenumber():
     """

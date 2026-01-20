@@ -3,7 +3,7 @@ A test module that tests clean_postalcode module.
 
 This test example provides a single test for the clean_postalcode.py module.
 """
-from canadata_clean.clean_postalcode import clean_postalcode
+from canadataClean.clean_postalcode import clean_postalcode
 import pytest
 
 def test_clean_postalcode():

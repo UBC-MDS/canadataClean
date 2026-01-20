@@ -22,7 +22,7 @@
 # SOFTWARE.
 
 """
-canadata_clean
+canadataClean
 
 A collection of utility functions for cleaning and validating Canada-specific structured data
 in pandas DataFrames. This package helps standardize common Canadian data fields, including
@@ -40,8 +40,8 @@ This package is intended to make datasets analysis-ready while helping users ide
 correct data quality issues in Canadian datasets.
 """
 
-from canadata_clean.clean_phonenumber import clean_phonenumber
-from canadata_clean.clean_postalcode import clean_postalcode
-from canadata_clean.clean_location  import clean_location
-from canadata_clean.clean_date import clean_date
+from canadataClean.clean_phonenumber import clean_phonenumber
+from canadataClean.clean_postalcode import clean_postalcode
+from canadataClean.clean_location  import clean_location
+from canadataClean.clean_date import clean_date
 __all__ = ["clean_phonenumber", "clean_postalcode", "clean_location", "clean_date"]

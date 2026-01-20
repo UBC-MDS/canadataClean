@@ -1,4 +1,4 @@
-# Welcome to canadata-clean's Documentation '
+# Welcome to canadataClean's Documentation '
 
 ## Overview
 

@@ -2,7 +2,7 @@
 
 This project was created by adapting a Python package template generated with [Copier](https://copier.readthedocs.io/).
 
-The original template provided the initial project structure, tooling (Hatch), and contributing guidelines. We modified and extended it to fit the needs of our **canadata-clean** project, which focuses on standardizing Canadian data formats.
+The original template provided the initial project structure, tooling (Hatch), and contributing guidelines. We modified and extended it to fit the needs of our **canadataClean** project, which focuses on standardizing Canadian data formats.
 
 # Contributing
 
@@ -41,7 +41,7 @@ You can contribute in many ways, for example:
 
 ### Report Bugs
 
-Report bugs at https://github.com/kessler24/canadata_clean/issues.
+Report bugs at https://github.com/kessler24/canadataClean/issues.
 
 **If you are reporting a bug, please follow the template guidelines. The more
 detailed your report, the easier and thus faster we can help you.**
@@ -65,29 +65,29 @@ happy for any support that they can get.
 
 ### Write Documentation
 
-canadata-clean could always use more documentation, whether as
+canadataClean could always use more documentation, whether as
 part of the official documentation, in docstrings, or even on the web in blog
 posts, articles, and such. Just
-[open an issue](https://github.com/kessler24/canadata_clean/issues)
+[open an issue](https://github.com/kessler24/canadataClean/issues)
 to let us know what you will be working on so that we can provide you with guidance.
 
 ### Submit Feedback
 
 The best way to send feedback is to file an issue at
-https://github.com/kessler24/canadata_clean/issues. If your feedback fits the format of one of
+https://github.com/kessler24/canadataClean/issues. If your feedback fits the format of one of
 the issue templates, please use that. Remember that this is a volunteer-driven
 project and everybody has limited time.
 
 ## Get Started!
 
-Ready to contribute? Here's how to set up canadata-clean for
+Ready to contribute? Here's how to set up canadataClean for
 local development.
 
-1. Clone the https://github.com/kessler24/canadata_clean
+1. Clone the https://github.com/kessler24/canadataClean
    repository on GitHub.
 
     ```shell
-    git clone git@github.com:your_name_here/canadata_clean.git
+    git clone git@github.com:your_name_here/canadataClean.git
     ```
 
 2. [Install hatch](https://hatch.pypa.io/latest/install/).

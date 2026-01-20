@@ -48,7 +48,7 @@ body:
     attributes:
       label: Environment
       description: >
-        Please paste the output of running `depinfo --markdown canadata_clean`
+        Please paste the output of running `depinfo --markdown canadataClean`
         in your environment between the `details` tags below.
       value: |
         <details>

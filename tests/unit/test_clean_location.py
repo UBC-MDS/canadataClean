@@ -3,14 +3,14 @@ A test module for the location cleaning function.
 """
 import pytest
 import re
-from canadata_clean.clean_location import clean_location
-from canadata_clean.clean_location import remove_punctuation
-from canadata_clean.clean_location import remove_spaces
-from canadata_clean.clean_location import normalize_names
-from canadata_clean.clean_location import score_predictions
-from canadata_clean.clean_location import get_max
-from canadata_clean.clean_location import try_variation
-from canadata_clean.clean_location import try_variations
+from canadataClean.clean_location import clean_location
+from canadataClean.clean_location import remove_punctuation
+from canadataClean.clean_location import remove_spaces
+from canadataClean.clean_location import normalize_names
+from canadataClean.clean_location import score_predictions
+from canadataClean.clean_location import get_max
+from canadataClean.clean_location import try_variation
+from canadataClean.clean_location import try_variations
 
 def test_clean_location():
     """

@@ -70,13 +70,13 @@ jobs:
 
       - name: Publish to TestPyPI
         uses: pypa/gh-action-pypi-publish@release/v1
-        if: steps.release.outputs.released == 'true'
+        #if: steps.release.outputs.released == 'true'
         with:
           repository-url: https://test.pypi.org/legacy/
           password: ${{ secrets.TEST_PYPI_API_TOKEN }}
 
       - name: Test install from TestPyPI
-        if: steps.release.outputs.released == 'true'
+        #if: steps.release.outputs.released == 'true'
         run: |
             pip install \
             --index-url https://test.pypi.org/simple/ \
@@ -85,6 +85,6 @@ jobs:
 
       - name: Publish package distributions to GitHub Releases
         uses: python-semantic-release/upload-to-gh-release@main
-        if: steps.release.outputs.released == 'true'
+        #if: steps.release.outputs.released == 'true'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

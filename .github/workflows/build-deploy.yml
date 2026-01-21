@@ -45,14 +45,13 @@ jobs:
 
     # Set up operating system
     runs-on: ubuntu-latest
-    python-version: '3.12'
 
     # Define job steps
     steps:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version: '3.12'
 
       - name: Check-out repository
         uses: actions/checkout@v3

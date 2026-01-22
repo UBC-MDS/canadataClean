@@ -13,17 +13,19 @@ format:
 
 quartodoc:
   # the name used to import the package you want to create reference docs for
-  package: quartodoc
+  package: canadataClean
 
   # write sidebar and style data
   sidebar: reference/_sidebar.yml
   css: reference/_styles-quartodoc.css
 
   sections:
-    - title: Some functions
-      desc: Functions to inspect docstrings.
+    - title: Functions for canadataClean package
+      desc: This page shows each public function in canadataClean, its docstring, and a short runnable example. If you are using the repository directly, install the package in editable mode first
       contents:
         # the functions being documented in the package.
         # you can refer to anything: class methods, modules, etc..
-        - get_object
-        - preview
+        - clean_date
+        - clean_location
+        - clean_phonenumber
+        - clean_postalcode

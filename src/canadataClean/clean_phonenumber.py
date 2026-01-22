@@ -19,7 +19,7 @@ def clean_phonenumber(text: str) -> str:
     ValueError
         If the input does not contain exactly 10 digits.
     TypeError
-       The input must be provided as a string.
+        The input must be provided as a string.
 
     Examples
     --------

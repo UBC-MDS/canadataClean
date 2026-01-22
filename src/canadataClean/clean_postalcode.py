@@ -8,7 +8,7 @@ def clean_postalcode(postal_code: str, region: str = None) -> str:
 
     Parameters
     ----------
-    text : str
+    postal_code : str
         The input string representing a Canadian postal code.
     region : str, optional
         The Canadian province or territory to validate the postal code against (default is None, which skips region-specific validation).

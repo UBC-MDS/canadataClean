@@ -1,0 +1,49 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title:  "canadataClean Documentation"
+  description: "Python package for cleaning and validating Canada-specific data"
+  repo-url: https://github.com/UBC-MDS/canadataClean
+  
+  navbar:
+    title: "canadataClean"
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Reference"
+        href:  reference/index.qmd
+    right:
+      - icon:  github
+        href: https://github.com/UBC-MDS/canadataClean
+
+  sidebar: 
+    - title: "Functions"
+      contents:
+        - reference/index.qmd
+        - section: "Available Functions"
+          contents:
+            - reference/clean_date.qmd
+            - reference/clean_location.qmd
+            - reference/clean_phonenumber.qmd
+            - reference/clean_postalcode.qmd
+
+format:
+  html:
+    theme:  cosmo
+    toc: true
+    code-copy: true
+
+quartodoc: 
+  style: pkgdown
+  dir: reference
+  package: canadataClean
+  sections:
+    - title: "Data Cleaning Functions"
+      desc: "Core functions for cleaning and validating Canadian data"
+      contents:
+        - clean_date
+        - clean_location
+        - clean_phonenumber
+        - clean_postalcode

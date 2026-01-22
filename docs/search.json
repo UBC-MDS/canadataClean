@@ -107,25 +107,25 @@
     "text": "Get Started!\nReady to contribute? Here’s how to set up canadataClean for local development.\n\nClone the https://github.com/kessler24/canadataClean repository on GitHub.\ngit clone git@github.com:your_name_here/canadataClean.git\nInstall hatch.\nCreate a branch for local development using the default branch (typically main) as a starting point. Use fix or clean as a prefix for your branch name.\ngit checkout main\ngit checkout -b clean-name-of-your-func\nNow you can make your changes locally.\nWhen you’re done making changes, apply the quality assurance tools and check that your changes pass our test suite. This is all included with tox\nhatch run test:run\nCommit your changes and push your branch to GitHub. Please use semantic commit messages.\ngit add .\ngit commit -m \"fix: summarize your changes\"\ngit push -u origin fix-name-of-your-bugfix\nOpen the link displayed in the message when pushing your new branch in order to submit a pull request.\nAt least one teammate must review your pull request before it can be merged.\n\n\nPull Request Guidelines\nBefore you submit a pull request, check that it meets these guidelines:\n\nThe pull request should include tests for Canadian formatting functionality.\nIf the pull request adds functionality, the docs should be updated. Put your new functionality into a function with a docstring that explains the Canadian formatting standards being applied.\nYour pull request must be reviewed and approved by at least one other team member before merging.\nYour pull request will automatically be checked by the full test suite. It needs to pass all of them before it can be considered for merging.\nEnsure your code follows the project’s coding standards and includes appropriate error handling for edge cases in Canadian data formatting."
   },
   {
-    "objectID": "docs/index.html",
-    "href": "docs/index.html",
-    "title": "Welcome to canadataClean’s Documentation ’",
+    "objectID": "CHANGELOG.html",
+    "href": "CHANGELOG.html",
+    "title": "Changelog",
     "section": "",
-    "text": ":maxdepth: 2 :hidden: :caption: Contents:\nHome \n\nThis is the landing page of your docs. you can update it as you’d like to. This documentation example uses myst markdown as the primary documentation syntax.\n:::{button-link} https://www.pyopensci.org/python-package-guide/documentation/hosting-tools/myst-markdown-rst-doc-syntax.html :color: primary :class: sd-rounded-pill float-left\nLearn more about myst in our pyOpenSci packaging guide.\n:::\nMyst is a version of markdown that has more formatting flexibility. This is what a sphinx directive looks like using myst markdown formatting:\n:::{toctree}\n:maxdepth: 2\n:caption: Contents:\n:::\nIf you see syntax like the syntax below, you are looking at rst.\n.. toctree::\n   :maxdepth: 2\n   :caption: Contents:\n\n\n\n\nCopyright © 2026 Molly Kessler.\nFree software distributed under the MIT License."
+    "text": "All notable changes to this project will be documented in this file.\nThe format is based on Keep a Changelog, and this project adheres to Semantic Versioning.\n\n\n\nUpcoming features and fixes\n\n\n\n\n\nFirst release"
   },
   {
-    "objectID": "docs/index.html#overview",
-    "href": "docs/index.html#overview",
-    "title": "Welcome to canadataClean’s Documentation ’",
+    "objectID": "CHANGELOG.html#unreleased",
+    "href": "CHANGELOG.html#unreleased",
+    "title": "Changelog",
     "section": "",
-    "text": ":maxdepth: 2 :hidden: :caption: Contents:\nHome \n\nThis is the landing page of your docs. you can update it as you’d like to. This documentation example uses myst markdown as the primary documentation syntax.\n:::{button-link} https://www.pyopensci.org/python-package-guide/documentation/hosting-tools/myst-markdown-rst-doc-syntax.html :color: primary :class: sd-rounded-pill float-left\nLearn more about myst in our pyOpenSci packaging guide.\n:::\nMyst is a version of markdown that has more formatting flexibility. This is what a sphinx directive looks like using myst markdown formatting:\n:::{toctree}\n:maxdepth: 2\n:caption: Contents:\n:::\nIf you see syntax like the syntax below, you are looking at rst.\n.. toctree::\n   :maxdepth: 2\n   :caption: Contents:"
+    "text": "Upcoming features and fixes"
   },
   {
-    "objectID": "docs/index.html#copyright",
-    "href": "docs/index.html#copyright",
-    "title": "Welcome to canadataClean’s Documentation ’",
+    "objectID": "CHANGELOG.html#section",
+    "href": "CHANGELOG.html#section",
+    "title": "Changelog",
     "section": "",
-    "text": "Copyright © 2026 Molly Kessler.\nFree software distributed under the MIT License."
+    "text": "First release"
   },
   {
     "objectID": "CODE_OF_CONDUCT.html",
@@ -175,27 +175,6 @@
     "title": "Code of Conduct",
     "section": "",
     "text": "This Code of Conduct is copied from the tidyverse Code of Conduct, which was adapted from the Contributor Covenant, version 1.4, available at http://contributor-covenant.org/version/1/4"
-  },
-  {
-    "objectID": "CHANGELOG.html",
-    "href": "CHANGELOG.html",
-    "title": "Changelog",
-    "section": "",
-    "text": "All notable changes to this project will be documented in this file.\nThe format is based on Keep a Changelog, and this project adheres to Semantic Versioning.\n\n\n\nUpcoming features and fixes\n\n\n\n\n\nFirst release"
-  },
-  {
-    "objectID": "CHANGELOG.html#unreleased",
-    "href": "CHANGELOG.html#unreleased",
-    "title": "Changelog",
-    "section": "",
-    "text": "Upcoming features and fixes"
-  },
-  {
-    "objectID": "CHANGELOG.html#section",
-    "href": "CHANGELOG.html#section",
-    "title": "Changelog",
-    "section": "",
-    "text": "First release"
   },
   {
     "objectID": "index.html#summary",

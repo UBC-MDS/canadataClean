@@ -1,8 +1,8 @@
 # Function reference {.doc .doc-index}
 
-## Functions for canadataClean package
+## Data Cleaning Functions
 
-This page shows each public function in canadataClean, its docstring, and a short runnable example. If you are using the repository directly, install the package in editable mode first
+Core functions for cleaning and validating Canadian data
 
 | | |
 | --- | --- |

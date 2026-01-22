@@ -60,6 +60,9 @@ def test_empty_and_none_inputs():
     # Whitespace-only string
     with pytest.raises(ValueError, match="Date string cannot be empty or None"):
         clean_date("   ")
+    # Singe whitespace string
+    with pytest.raises(ValueError, match="Date string cannot be empty or None"):
+        clean_date(" ")
     # None input (defensive handling)
     with pytest.raises(ValueError, match="Date string cannot be empty or None"):
         clean_date(None)

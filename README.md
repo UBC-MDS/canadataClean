@@ -1,7 +1,7 @@
 # canadataClean
 
 |  |  |
-|----|----|
+|------------------------------------|------------------------------------|
 | Package | [![Latest PyPI Version](https://img.shields.io/pypi/v/canadataClean.svg)](https://test.pypi.org/project/canadataClean/) [![Supported Python Versions](https://img.shields.io/pypi/pyversions/canadataClean.svg)](https://test.pypi.org/project/canadataClean/) |
 | Meta | [![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md) |
 
@@ -84,7 +84,7 @@ $ pytest --cov=src/canadata_clean
 
 ## Documentation
 
-The online documentation for this package can be found here.
+The online documentation for this package can be found [here.](https://ubc-mds.github.io/canadataClean/)
 
 To generate and preview the reference documentation, use the following command:
 

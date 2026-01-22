@@ -27,6 +27,11 @@ def test_clean_phonenumber():
     actual = clean_phonenumber(string)
     assert  actual == expected, f"Expected {expected} but got {actual}"
 
+    string = "123.456.7890"
+    expected = "+1 (123) 456-7890"
+    actual = clean_phonenumber(string)
+    assert  actual == expected, f"Expected {expected} but got {actual}"
+
     #Invalid Input
     with pytest.raises(ValueError):
         clean_phonenumber("123457")

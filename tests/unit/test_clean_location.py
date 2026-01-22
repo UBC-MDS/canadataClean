@@ -71,6 +71,7 @@ def format():
     assert re.match(r"^[A-Z]{2}$", clean_location("New Brunswich"))
     assert re.match(r"^[A-Z]{2}$", clean_location("Saskatchewan"))
     assert re.match(r"^[A-Z]{2}$", clean_location("Yukon"))
+    assert re.match(r"^[A-Z]{2}$", clean_location("alberta"))
 
 def output_type():
     """

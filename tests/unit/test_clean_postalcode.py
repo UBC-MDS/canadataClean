@@ -24,6 +24,7 @@ def test_clean_postalcode():
     assert clean_postalcode("V5K-0A1") == "V5K 0A1"
     assert clean_postalcode("V1A/2B6") == "V1A 2B6"
     assert clean_postalcode("v1g2f4") == "V1G 2F4"
+    assert clean_postalcode("v6t 1g3") == "V6T 1G3"
     assert len(clean_postalcode("K1A0B1")) == 7
     assert clean_postalcode("K1A0B1")[3] == " "
 

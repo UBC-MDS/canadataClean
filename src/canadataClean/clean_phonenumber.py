@@ -54,10 +54,10 @@ def clean_phonenumber(text: str) -> str:
     
     # Get the area code
     area = cleaned[0:3]
-    # Get the extension code
-    extension = cleaned[3:6]
+    # Get the central office code
+    central_office = cleaned[3:6]
     # Get the line number
     line = cleaned[6:]
-    output = f"+1 ({area}) {extension}-{line}"
+    output = f"+1 ({area}) {central_office}-{line}"
     
     return output

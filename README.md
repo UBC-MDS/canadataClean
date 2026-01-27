@@ -36,7 +36,7 @@ To use canadataClean in your code:
 from canadataClean import clean_date, clean_location, clean_phonenumber, clean_postalcode
 ```
 
-### Functions
+## Functions
 
 ``` python
 clean_date(date)

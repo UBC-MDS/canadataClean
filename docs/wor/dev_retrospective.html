@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>changelog – canadataClean Documentation</title>
+<title>Work Organization and Retrospective – canadataClean Documentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +23,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d24c3880db9ce3ca4ea2d5bb002bea1f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d24c3880db9ce3ca4ea2d5bb002bea1f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">canadataClean</span>
     </a>
   </div>
@@ -89,15 +89,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./reference/index.html"> 
+    <a class="nav-link" href="../reference/index.html"> 
 <span class="menu-text">Reference</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./wor/dev_retrospective.html"> 
+    <a class="nav-link active" href="../wor/dev_retrospective.html" aria-current="page"> 
 <span class="menu-text">Work organization and retrospective</span></a>
   </li>  
 </ul>
@@ -123,35 +123,93 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#changelog" id="toc-changelog" class="nav-link active" data-scroll-target="#changelog">Changelog</a>
+  <li><a href="#issue-assignment-milestones-and-project-boards" id="toc-issue-assignment-milestones-and-project-boards" class="nav-link active" data-scroll-target="#issue-assignment-milestones-and-project-boards">Issue Assignment, Milestones, and Project Boards</a></li>
+  <li><a href="#development-tools-infrastructure-and-organizational-practices" id="toc-development-tools-infrastructure-and-organizational-practices" class="nav-link" data-scroll-target="#development-tools-infrastructure-and-organizational-practices">Development Tools, Infrastructure, and Organizational Practices</a>
   <ul class="collapse">
-  <li><a href="#unreleased" id="toc-unreleased" class="nav-link" data-scroll-target="#unreleased">[Unreleased]</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">[0.1.0] - (1979-01-01)</a></li>
+  <li><a href="#scaling-up-what-would-we-use-for-larger-projects" id="toc-scaling-up-what-would-we-use-for-larger-projects" class="nav-link" data-scroll-target="#scaling-up-what-would-we-use-for-larger-projects">Scaling Up: What Would We Use for Larger Projects</a></li>
+  </ul></li>
+  <li><a href="#reflections-on-organizational-choices" id="toc-reflections-on-organizational-choices" class="nav-link" data-scroll-target="#reflections-on-organizational-choices">Reflections on Organizational Choices</a>
+  <ul class="collapse">
+  <li><a href="#wins-and-lessons" id="toc-wins-and-lessons" class="nav-link" data-scroll-target="#wins-and-lessons">Wins and Lessons</a></li>
   </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Work Organization and Retrospective</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="changelog" class="level1">
-<h1>Changelog</h1>
-<p>All notable changes to this project will be documented in this file.</p>
-<p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>, and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
-<section id="unreleased" class="level2">
-<h2 class="anchored" data-anchor-id="unreleased">[Unreleased]</h2>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="issue-assignment-milestones-and-project-boards" class="level2">
+<h2 class="anchored" data-anchor-id="issue-assignment-milestones-and-project-boards">Issue Assignment, Milestones, and Project Boards</h2>
+<p>Our project management relied heavily on GitHub’s collaborative features:</p>
 <ul>
-<li>Upcoming features and fixes</li>
+<li><strong>Issues:</strong> Every feature, bug, and major decision started as an issue. Each issue was assigned to relevant team members and linked to specific milestones (e.g., <em>milestone3</em> and <em>milestone4</em>). This ensured accountability and made progress transparent.</li>
+<li><strong>Project Boards:</strong> We used a GitHub Project Board with columns for <em>Backlog</em>, <em>Ready</em>, <em>In progress</em>, <em>In review</em>, and <em>Done</em> allowing us to visualize task flow and individual workload at a glance. Team and individual performance could be assessed by filtering cards by assignee.</li>
+<li><strong>Milestones:</strong> All issues required for this course milestone were grouped under release. This grouping allowed us to track overall milestone completion and prioritize critical tasks.</li>
 </ul>
+<p><strong>Reflection:</strong><br>
+We found that explicitly assigning and labeling issues, and regularly updating the board, reduced confusion and prevented overlap in work. Linking pull requests to issues and milestones provided a clear audit trail of our development process.</p>
+<hr>
 </section>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section">[0.1.0] - (1979-01-01)</h2>
+<section id="development-tools-infrastructure-and-organizational-practices" class="level2">
+<h2 class="anchored" data-anchor-id="development-tools-infrastructure-and-organizational-practices">Development Tools, Infrastructure, and Organizational Practices</h2>
+<p>During development, we used a variety of tools and GitHub features:</p>
 <ul>
-<li>First release</li>
+<li><strong>GitHub Flow and Git Flow:</strong> We implemented a Git Flow variant. A development (or <code>staging</code>) branch was created from <code>main</code>, and most feature branches were based off <code>staging</code>. Pull requests were reviewed and merged into <code>staging</code>, then finally into <code>main</code> after integration testing. This provided an extra layer for catch issues before release, at the cost of occasional merge conflicts.</li>
+<li><strong>Continuous Integration / Continuous Deployment (CI/CD):</strong> We set up GitHub Actions for automated testing, linting, and documentation builds. On each PR, a preview of the documentation site was deployed to Netlify. Test coverage was tracked via an external service, and semantic versioning along with PyPI deploys were triggered on releases.</li>
+<li><strong>Issue-driven workflow:</strong> All communications, work progress, and code changes were tracked through issues and PRs, reducing the need for extra channels like email or Slack.</li>
+<li><strong>Documentation generation:</strong> We used <code>quartodoc</code> to generate API documentation directly from code, and Quarto for prose-based guides (like this one), deployed automatically via CI.</li>
+<li><strong>Code reviews:</strong> Every PR required another team member’s review before merging.</li>
 </ul>
+<section id="scaling-up-what-would-we-use-for-larger-projects" class="level3">
+<h3 class="anchored" data-anchor-id="scaling-up-what-would-we-use-for-larger-projects">Scaling Up: What Would We Use for Larger Projects</h3>
+<p>If scaling to a much larger project or team, we would:</p>
+<ul>
+<li>Use more advanced project board automations (e.g., auto-move, custom views for epics, dependencies).</li>
+<li>Integrate more granular CI jobs for multiple environments (OS, Python versions).</li>
+<li>Enforce stricter branch protection rules and require CI to pass before merges.</li>
+<li>Use GitHub Discussions and Wiki for more persistent Q&amp;A and technical notes.</li>
+<li>Possibly adopt an issue template system for consistent reporting, and a changelog management tool (e.g., Release Drafter).</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="reflections-on-organizational-choices" class="level2">
+<h2 class="anchored" data-anchor-id="reflections-on-organizational-choices">Reflections on Organizational Choices</h2>
+<ul>
+<li><strong>GitHub infrastructure:</strong> Using GitHub Issues, PRs, and Projects as the sole communication and coordination tools kept all project knowledge centralized and searchable.</li>
+<li><strong>Development practices:</strong> Our adaptation of Git Flow was helpful for collectively integrating changes, although a strict GitHub Flow might have been faster for a very small team.</li>
+<li><strong>Retrospective:</strong> The project board visual made workload disparities clear, so we could redistribute tasks early. Regular triage and board pruning (closing/focusing issues) kept progress on track.</li>
+<li><strong>Documentation:</strong> Leveraging quartodoc and Quarto simplified API docs, while allowing for rich prose guides, which is especially important for onboarding new contributors.</li>
+</ul>
+<section id="wins-and-lessons" class="level3">
+<h3 class="anchored" data-anchor-id="wins-and-lessons">Wins and Lessons</h3>
+<ul>
+<li><strong>Successes:</strong> Automated documentation previews (Netlify) and test coverage badge gave us instant feedback on PR quality and build health.<br>
+</li>
+<li><strong>Improvements:</strong> Early on, some issues were too vaguely defined. We improved clarity by using checklists and concrete acceptance criteria.</li>
+<li><strong>As a Team:</strong> Being disciplined with our workflow made peer review more effective and sped up onboarding for any new member.</li>
+</ul>
+<hr>
+<p><em>Prepared by the canadataClean development team: 2025–26 DSCI-524 Group 02.</em></p>
 
 
 </section>

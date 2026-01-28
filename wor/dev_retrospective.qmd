@@ -1,0 +1,56 @@
+---
+title: "Work Organization and Retrospective"
+format: html
+---
+
+## Issue Assignment, Milestones, and Project Boards
+
+Our project management relied heavily on GitHub's collaborative features:
+
+- **Issues:** Every feature, bug, and major decision started as an issue. Each issue was assigned to relevant team members and linked to specific milestones (e.g., *milestone3* and *milestone4*). This ensured accountability and made progress transparent.
+- **Project Boards:** We used a GitHub Project Board with columns for _Backlog_, _Ready_, _In progress_, _In review_, and _Done_ allowing us to visualize task flow and individual workload at a glance. Team and individual performance could be assessed by filtering cards by assignee.
+- **Milestones:** All issues required for this course milestone were grouped under release. This grouping allowed us to track overall milestone completion and prioritize critical tasks.
+
+**Reflection:**  
+We found that explicitly assigning and labeling issues, and regularly updating the board, reduced confusion and prevented overlap in work. Linking pull requests to issues and milestones provided a clear audit trail of our development process.
+
+---
+
+## Development Tools, Infrastructure, and Organizational Practices
+
+During development, we used a variety of tools and GitHub features:
+
+- **GitHub Flow and Git Flow:** We implemented a Git Flow variant. A development (or `staging`) branch was created from `main`, and most feature branches were based off `staging`. Pull requests were reviewed and merged into `staging`, then finally into `main` after integration testing. This provided an extra layer for catch issues before release, at the cost of occasional merge conflicts.
+- **Continuous Integration / Continuous Deployment (CI/CD):** We set up GitHub Actions for automated testing, linting, and documentation builds. On each PR, a preview of the documentation site was deployed to Netlify. Test coverage was tracked via an external service, and semantic versioning along with PyPI deploys were triggered on releases.
+- **Issue-driven workflow:** All communications, work progress, and code changes were tracked through issues and PRs, reducing the need for extra channels like email or Slack.
+- **Documentation generation:** We used `quartodoc` to generate API documentation directly from code, and Quarto for prose-based guides (like this one), deployed automatically via CI.
+- **Code reviews:** Every PR required another team member’s review before merging.
+
+### Scaling Up: What Would We Use for Larger Projects
+
+If scaling to a much larger project or team, we would:
+
+- Use more advanced project board automations (e.g., auto-move, custom views for epics, dependencies).
+- Integrate more granular CI jobs for multiple environments (OS, Python versions).
+- Enforce stricter branch protection rules and require CI to pass before merges.
+- Use GitHub Discussions and Wiki for more persistent Q&A and technical notes.
+- Possibly adopt an issue template system for consistent reporting, and a changelog management tool (e.g., Release Drafter).
+
+---
+
+## Reflections on Organizational Choices
+
+- **GitHub infrastructure:** Using GitHub Issues, PRs, and Projects as the sole communication and coordination tools kept all project knowledge centralized and searchable.
+- **Development practices:** Our adaptation of Git Flow was helpful for collectively integrating changes, although a strict GitHub Flow might have been faster for a very small team.
+- **Retrospective:** The project board visual made workload disparities clear, so we could redistribute tasks early. Regular triage and board pruning (closing/focusing issues) kept progress on track.
+- **Documentation:** Leveraging quartodoc and Quarto simplified API docs, while allowing for rich prose guides, which is especially important for onboarding new contributors.
+
+### Wins and Lessons
+
+- **Successes:** Automated documentation previews (Netlify) and test coverage badge gave us instant feedback on PR quality and build health.  
+- **Improvements:** Early on, some issues were too vaguely defined. We improved clarity by using checklists and concrete acceptance criteria.
+- **As a Team:** Being disciplined with our workflow made peer review more effective and sped up onboarding for any new member.
+
+---
+
+*Prepared by the canadataClean development team: 2025–26 DSCI-524 Group 02.*

@@ -14,6 +14,8 @@ website:
         href: index.qmd
       - text: "Reference"
         href:  reference/index.qmd
+      - text: "Work organization and retrospective"
+        href: wor/dev_retrospective.qmd
     right:
       - icon:  github
         href: https://github.com/UBC-MDS/canadataClean

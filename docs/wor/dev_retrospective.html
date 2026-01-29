@@ -128,14 +128,15 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#issue-assignment-milestones-and-project-boards" id="toc-issue-assignment-milestones-and-project-boards" class="nav-link active" data-scroll-target="#issue-assignment-milestones-and-project-boards">Issue Assignment, Milestones, and Project Boards</a></li>
-  <li><a href="#development-tools-infrastructure-and-organizational-practices" id="toc-development-tools-infrastructure-and-organizational-practices" class="nav-link" data-scroll-target="#development-tools-infrastructure-and-organizational-practices">Development Tools, Infrastructure, and Organizational Practices</a>
+  <li><a href="#analytical-project-board-views-data-driven-retrospective" id="toc-analytical-project-board-views-data-driven-retrospective" class="nav-link" data-scroll-target="#analytical-project-board-views-data-driven-retrospective">Analytical Project Board Views &amp; Data-Driven Retrospective</a>
   <ul class="collapse">
-  <li><a href="#scaling-up-what-would-we-use-for-larger-projects" id="toc-scaling-up-what-would-we-use-for-larger-projects" class="nav-link" data-scroll-target="#scaling-up-what-would-we-use-for-larger-projects">Scaling Up: What Would We Use for Larger Projects</a></li>
+  <li><a href="#velocity-how-did-our-scope-change-over-time" id="toc-velocity-how-did-our-scope-change-over-time" class="nav-link" data-scroll-target="#velocity-how-did-our-scope-change-over-time">Velocity: How did our scope change over time?</a></li>
+  <li><a href="#burn-up-chart-did-m2-writing-code-have-more-issues-than-m3-github-actionsdocumentation-were-there-leftover-todos" id="toc-burn-up-chart-did-m2-writing-code-have-more-issues-than-m3-github-actionsdocumentation-were-there-leftover-todos" class="nav-link" data-scroll-target="#burn-up-chart-did-m2-writing-code-have-more-issues-than-m3-github-actionsdocumentation-were-there-leftover-todos">Burn-up Chart: Did M2 (writing code) have more issues than M3 (GitHub Actions/documentation)? Were there leftover Todos?</a></li>
+  <li><a href="#team-contributions-did-everyone-contribute-equally" id="toc-team-contributions-did-everyone-contribute-equally" class="nav-link" data-scroll-target="#team-contributions-did-everyone-contribute-equally">Team Contributions: Did everyone contribute equally?</a></li>
   </ul></li>
-  <li><a href="#reflections-on-organizational-choices" id="toc-reflections-on-organizational-choices" class="nav-link" data-scroll-target="#reflections-on-organizational-choices">Reflections on Organizational Choices</a>
-  <ul class="collapse">
-  <li><a href="#wins-and-lessons" id="toc-wins-and-lessons" class="nav-link" data-scroll-target="#wins-and-lessons">Wins and Lessons</a></li>
-  </ul></li>
+  <li><a href="#development-tools-infrastructure-and-organizational-practices" id="toc-development-tools-infrastructure-and-organizational-practices" class="nav-link" data-scroll-target="#development-tools-infrastructure-and-organizational-practices">Development Tools, Infrastructure, and Organizational Practices</a></li>
+  <li><a href="#daki-retrospective" id="toc-daki-retrospective" class="nav-link" data-scroll-target="#daki-retrospective">DAKI Retrospective</a></li>
+  <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections">Reflections</a></li>
   </ul>
 </nav>
     </div>
@@ -166,57 +167,87 @@ ul.task-list li input[type="checkbox"] {
 <p>Our project management relied heavily on GitHub’s collaborative features:</p>
 <ul>
 <li><strong>Issues:</strong> Every feature, bug, and major decision started as an issue. Each issue was assigned to relevant team members and linked to specific milestones (e.g., <em>milestone3</em> and <em>milestone4</em>). This ensured accountability and made progress transparent.</li>
-<li><strong>Project Boards:</strong> We used a GitHub Project Board with columns for <em>Backlog</em>, <em>Ready</em>, <em>In progress</em>, <em>In review</em>, and <em>Done</em> allowing us to visualize task flow and individual workload at a glance. Team and individual performance could be assessed by filtering cards by assignee.</li>
-<li><strong>Milestones:</strong> All issues required for this course milestone were grouped under release. This grouping allowed us to track overall milestone completion and prioritize critical tasks.</li>
+<li><strong>Project Boards:</strong> We used a GitHub Project Board with columns for <em>Backlog</em>, <em>Ready</em>, <em>In progress</em>, <em>In review</em>, and <em>Done</em>, allowing us to visualize task flow and individual workload at a glance. Team and individual performance could be assessed by filtering cards by assignee.</li>
+<li><strong>Milestones:</strong> All issues required for this course milestone were grouped under the relevant release milestone. This grouping allowed us to track overall milestone completion and prioritize critical tasks.</li>
 </ul>
 <p><strong>Reflection:</strong><br>
 We found that explicitly assigning and labeling issues, and regularly updating the board, reduced confusion and prevented overlap in work. Linking pull requests to issues and milestones provided a clear audit trail of our development process.</p>
 <hr>
 </section>
+<section id="analytical-project-board-views-data-driven-retrospective" class="level2">
+<h2 class="anchored" data-anchor-id="analytical-project-board-views-data-driven-retrospective">Analytical Project Board Views &amp; Data-Driven Retrospective</h2>
+<p>We grounded our reflection in actual project board analytics, supported by saved GitHub Project views.</p>
+<section id="velocity-how-did-our-scope-change-over-time" class="level3">
+<h3 class="anchored" data-anchor-id="velocity-how-did-our-scope-change-over-time">Velocity: How did our scope change over time?</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/milestone_progress.png" class="img-fluid figure-img"></p>
+<figcaption>Velocity by milestone</figcaption>
+</figure>
+</div>
+<p>Our velocity view shows the progression of issues per milestone: 20 for Milestone 1, 13 for Milestone 2, 6 for Milestone 3, and 11 for Milestone 4. This indicated that our initial planning cast a very wide net; over time, we streamlined our focus, improved our estimation, and concentrated on key deliverables.</p>
+<hr>
+</section>
+<section id="burn-up-chart-did-m2-writing-code-have-more-issues-than-m3-github-actionsdocumentation-were-there-leftover-todos" class="level3">
+<h3 class="anchored" data-anchor-id="burn-up-chart-did-m2-writing-code-have-more-issues-than-m3-github-actionsdocumentation-were-there-leftover-todos">Burn-up Chart: Did M2 (writing code) have more issues than M3 (GitHub Actions/documentation)? Were there leftover Todos?</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/burnup.png" class="img-fluid figure-img"></p>
+<figcaption>Burn-up chart by milestone and status</figcaption>
+</figure>
+</div>
+<p>The burn-up data illustrates that Milestone 2 (core code development) had a greater number of issues completed compared to Milestone 3 (GitHub Actions and documentation). This matches our workflow—most complexity happened early.<br>
+Our chart also shows most items were completed (“Done”), especially for early milestones. However, for Milestone 4, a few items remained in “Backlog” or “In Progress,” suggesting minor over-commitment towards the end.</p>
+<hr>
+</section>
+<section id="team-contributions-did-everyone-contribute-equally" class="level3">
+<h3 class="anchored" data-anchor-id="team-contributions-did-everyone-contribute-equally">Team Contributions: Did everyone contribute equally?</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/contributions.png" class="img-fluid figure-img"></p>
+<figcaption>Workload by team member</figcaption>
+</figure>
+</div>
+<p>The Team Workload view demonstrates our effort towards equitable workload: - kessler24: 16 items - randallxlee: 15 items - raymondww: 15 items - sasha-ss: 12 items</p>
+<p>The slight difference is mainly due to division of labor (some members prioritized complex logic, others handled more numerous but smaller docs/tasks). Regular check-ins and proactive redistribution avoided bottlenecks, and workload was kept fair throughout.</p>
+<hr>
+</section>
+</section>
 <section id="development-tools-infrastructure-and-organizational-practices" class="level2">
 <h2 class="anchored" data-anchor-id="development-tools-infrastructure-and-organizational-practices">Development Tools, Infrastructure, and Organizational Practices</h2>
-<p>During development, we used a variety of tools and GitHub features:</p>
 <ul>
-<li><strong>GitHub Flow and Git Flow:</strong> We implemented a Git Flow variant. A development (or <code>staging</code>) branch was created from <code>main</code>, and most feature branches were based off <code>staging</code>. Pull requests were reviewed and merged into <code>staging</code>, then finally into <code>main</code> after integration testing. This provided an extra layer for catch issues before release, at the cost of occasional merge conflicts.</li>
-<li><strong>Continuous Integration / Continuous Deployment (CI/CD):</strong> We set up GitHub Actions for automated testing, linting, and documentation builds. On each PR, a preview of the documentation site was deployed to Netlify. Test coverage was tracked via an external service, and semantic versioning along with PyPI deploys were triggered on releases.</li>
-<li><strong>Issue-driven workflow:</strong> All communications, work progress, and code changes were tracked through issues and PRs, reducing the need for extra channels like email or Slack.</li>
-<li><strong>Documentation generation:</strong> We used <code>quartodoc</code> to generate API documentation directly from code, and Quarto for prose-based guides (like this one), deployed automatically via CI.</li>
-<li><strong>Code reviews:</strong> Every PR required another team member’s review before merging.</li>
+<li><strong>Git Flow:</strong> We used a development (<code>documentation_dev</code>) branch for integrating features before merging to <code>main</code>, which improved code quality at the cost of rare merge conflicts.</li>
+<li><strong>CI/CD:</strong> GitHub Actions provided automated testing, linting, documentation builds, and Netlify preview deployments for every PR. Test coverage was tracked continuously.</li>
+<li><strong>Documentation:</strong> Used <code>quartodoc</code> for API docs and Quarto for prose guides—with Netlify/PR preview for real-time feedback.</li>
+<li><strong>Code Reviews:</strong> All PRs required peer review, improving team code quality and knowledge sharing.</li>
+<li><strong>Communication:</strong> Issues and PRs were our primary communication channels—avoiding fragmented channels like Slack or email.</li>
 </ul>
-<section id="scaling-up-what-would-we-use-for-larger-projects" class="level3">
-<h3 class="anchored" data-anchor-id="scaling-up-what-would-we-use-for-larger-projects">Scaling Up: What Would We Use for Larger Projects</h3>
-<p>If scaling to a much larger project or team, we would:</p>
-<ul>
-<li>Use more advanced project board automations (e.g., auto-move, custom views for epics, dependencies).</li>
-<li>Integrate more granular CI jobs for multiple environments (OS, Python versions).</li>
-<li>Enforce stricter branch protection rules and require CI to pass before merges.</li>
-<li>Use GitHub Discussions and Wiki for more persistent Q&amp;A and technical notes.</li>
-<li>Possibly adopt an issue template system for consistent reporting, and a changelog management tool (e.g., Release Drafter).</li>
-</ul>
+<p><strong>Scaling Up Recommendations:</strong> For larger projects, we would use: - More advanced project board automations (e.g., epic/dependency tracking), - Stricter branch protections and continuous delivery, - Wiki/Discussions for persistent technical notes, - Enhanced issue templates and changelogs.</p>
 <hr>
 </section>
+<section id="daki-retrospective" class="level2">
+<h2 class="anchored" data-anchor-id="daki-retrospective">DAKI Retrospective</h2>
+<p><strong>Drop:</strong><br>
+- Last-minute “review pileups”—regular, shorter review sessions would improve speed and reduce risk of delay. - Creating issues without immediate assignee or milestone tags.</p>
+<p><strong>Add:</strong><br>
+- Use of GitHub issue templates for fine-grained bug/feature tracking. - Routine project board hygiene checks for improved analytics.</p>
+<p><strong>Keep:</strong><br>
+- Project board views (velocity, team workload, milestone progress). - PR documentation previews for rapid, peer-driven documentation quality assurance.</p>
+<p><strong>Improve:</strong><br>
+- Estimating/documentation and review time as part of every milestone (not just code). - Promoting cross-review and responsibility rotation to increase resilience and limit bottlenecks.</p>
+<hr>
 </section>
-<section id="reflections-on-organizational-choices" class="level2">
-<h2 class="anchored" data-anchor-id="reflections-on-organizational-choices">Reflections on Organizational Choices</h2>
+<section id="reflections" class="level2">
+<h2 class="anchored" data-anchor-id="reflections">Reflections</h2>
 <ul>
-<li><strong>GitHub infrastructure:</strong> Using GitHub Issues, PRs, and Projects as the sole communication and coordination tools kept all project knowledge centralized and searchable.</li>
-<li><strong>Development practices:</strong> Our adaptation of Git Flow was helpful for collectively integrating changes, although a strict GitHub Flow might have been faster for a very small team.</li>
-<li><strong>Retrospective:</strong> The project board visual made workload disparities clear, so we could redistribute tasks early. Regular triage and board pruning (closing/focusing issues) kept progress on track.</li>
-<li><strong>Documentation:</strong> Leveraging quartodoc and Quarto simplified API docs, while allowing for rich prose guides, which is especially important for onboarding new contributors.</li>
-</ul>
-<section id="wins-and-lessons" class="level3">
-<h3 class="anchored" data-anchor-id="wins-and-lessons">Wins and Lessons</h3>
-<ul>
-<li><strong>Successes:</strong> Automated documentation previews (Netlify) and test coverage badge gave us instant feedback on PR quality and build health.<br>
-</li>
-<li><strong>Improvements:</strong> Early on, some issues were too vaguely defined. We improved clarity by using checklists and concrete acceptance criteria.</li>
-<li><strong>As a Team:</strong> Being disciplined with our workflow made peer review more effective and sped up onboarding for any new member.</li>
+<li><strong>Successes:</strong> Documentation previews and continuous feedback improved our product quality and reduced integration friction.</li>
+<li><strong>Improvements:</strong> Early ambiguity in issue descriptions was resolved by using checklists and clearer acceptance criteria.</li>
+<li><strong>Teamwork:</strong> Our data-driven approach and regular check-ins ensured fair workload distribution and collective project ownership.</li>
 </ul>
 <hr>
-<p><em>Prepared by the canadataClean development team: 2025–26 DSCI-524 Group 02.</em></p>
+<p><em>Prepared by canadataClean, 2025-26 DSCI-524 Group 02</em></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
